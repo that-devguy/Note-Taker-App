@@ -32,18 +32,16 @@ Installation instructions for this project will be updated in a future update.
 ## Usage
   
 To use this project, follow these steps:
+
 Usage instructions for this project will be updated in a future update.
 
 ## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 This project is not currently open for contributions.
-
-Please ensure your pull request adheres to the project's code style and includes tests for any new features or changes. Thank you for your contributions!
 
 ## Tests
 
 To run tests on this project, follow these steps:
+
 Testing instructions for this project will be updated in a future update.
   
 ## Project Links
