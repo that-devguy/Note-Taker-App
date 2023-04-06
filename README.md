@@ -48,7 +48,7 @@ Testing instructions for this project will be updated in a future update.
   
 Walkthrough Demo:
 
-Github Repository:
+Github Repository: https://github.com/that-devguy/Note-Taker-App
 
 ## License
 
