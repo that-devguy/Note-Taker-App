@@ -17,7 +17,12 @@ This application uses an Express.js back end and will save and retrieve note dat
 
 ## Technologies Used
 
-HTML5, CSS, JavaScript, Node.js, Express, Heroku
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)](https://www.ecma-international.org/ecma-262/)
+[![Node.js](https://img.shields.io/badge/Node.js-v14.15.5-green)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-v4.17.1-lightgrey)](https://expressjs.com/)
+[![Heroku](https://img.shields.io/badge/Heroku-v20.10.6-purple)](https://www.heroku.com/)
+[![CSS](https://img.shields.io/badge/CSS3-blue)](https://www.w3.org/TR/CSS/)
+[![HTML](https://img.shields.io/badge/HTML5-orange)](https://html.spec.whatwg.org/)
 
 ## Installation
 
