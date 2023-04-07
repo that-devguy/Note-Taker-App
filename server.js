@@ -10,6 +10,9 @@ const app = express()
 // Set the port number for the server
 const PORT = 3001
 
+// Static files for anything in the public directory so that CSS works
+app.use(express.static(path.join(__dirname, "public")));
+
 // Import notes routes
 const notesRouter = require('./routes/notes.js')
 
