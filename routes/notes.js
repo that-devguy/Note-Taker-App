@@ -12,5 +12,9 @@ router.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '../public/notes.html'))
 })
 
+router.get("/api", (req, res) => 
+    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
+)
+
 // Export the router
 module.exports = router

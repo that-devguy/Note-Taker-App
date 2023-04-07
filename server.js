@@ -13,6 +13,10 @@ const PORT = 3001
 // Static files for anything in the public directory so that CSS works
 app.use(express.static(path.join(__dirname, "public")));
 
+// Middleware for parsing json and form data
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // Import notes routes
 const notesRouter = require('./routes/notes.js')
 
