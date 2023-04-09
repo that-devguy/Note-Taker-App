@@ -17,16 +17,13 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Import notes routes
-const notesRouter = require('./routes/notes.js')
+// Import routes
+const htmlRouter = require('./routes/html.js')
+const apiRouter = require('./routes/api.js')
 
 // Use the notes routes for the /notes endpoint
-app.use('/notes', notesRouter)
-
-// Route for index.html file
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, '/public/index.html'))
-})
+app.use('/', htmlRouter)
+app.use('/api', apiRouter)
 
 // Start server and listen for incoming requests
 app.listen(PORT, () =>

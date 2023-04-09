@@ -7,12 +7,8 @@ const path = require('path')
 // New router instance
 const router = express.Router()
 
-// Route for notes.html file
-router.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/notes.html'))
-})
 
-router.get("/api", (req, res) => 
+router.get("/api/notes", (req, res) => 
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 )
 
