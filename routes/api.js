@@ -1,16 +1,33 @@
-// Import the Express framework
-const express = require('express')
+const express = require('express') // Import the Express framework
+const router = express.Router() // New router instance
+const { v4: uuidv4 } = require('uuid') // Generates unique identifiers
+const { readAndAppend, readFromFile } = require('../helpers/fsUtils')
 
-// Import the built-in Node.js path module
-const path = require('path')
-
-// New router instance
-const router = express.Router()
-
-
-router.get("/api/notes", (req, res) => 
+router.get("/notes", (req, res) => 
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 )
 
+router.post("/notes", (req, res) => {
+    const { title, text } = req.body
+
+    if (title && text) {
+        const newNote = {
+            id: uuidv4(),
+            title,
+            text,
+          }
+
+        readAndAppend(newNote, './db/db.json')
+
+        const response = {
+            status: 'success',
+            body: newNote
+          }
+
+        res.json(response)
+    } else {
+        res.json('Error in posting note');
+    }  
+})
 // Export the router
 module.exports = router

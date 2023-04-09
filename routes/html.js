@@ -1,11 +1,6 @@
-// Import the Express framework
-const express = require('express')
-
-// Import the built-in Node.js path module
-const path = require('path')
-
-// New router instance
-const router = express.Router()
+const express = require('express') // Import the Express framework
+const path = require('path') // Import the built-in Node.js path module
+const router = express.Router() // New router instance
 
 // Route for notes.html file
 router.get("/notes", (req, res) => {
@@ -13,9 +8,9 @@ router.get("/notes", (req, res) => {
 })
 
 // Route for index.html file
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html'))
-  })
+router.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/index.html'))
+})
 
 // Export the router
 module.exports = router
