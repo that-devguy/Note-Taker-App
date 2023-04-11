@@ -27,13 +27,29 @@ This application uses an Express.js back end and will save and retrieve note dat
 ## Installation
 
 Please follow these steps to install and run the project on your local machine:
-Installation instructions for this project will be updated in a future update.
+
+1. Install Node.js
+2. Clone the repository
+3. Install dependencies by opening the cloned repository and run the command `npm install` to install all the dependencies required for the generator
+4. Run the generator by running the command `node index` to start the generator and answer the prompts
   
 ## Usage
   
 To use this project, follow these steps:
 
-Usage instructions for this project will be updated in a future update.
+1. Visit the deployed application: https://evening-sea-72708.herokuapp.com/ 
+2. Click "Get Started"
+3. Enter a note title & note text then click the save icon
+4. Click on a note title on the left side to view, edit, or delete notes
+
+![Note Taker Home Page Demo Image](/public/assets/images/note-taker-index-demo.JPG)
+> **Note**: Note Taker Home Page - Click "Get Started"
+
+![New Note Demo Image](/public/assets/images/new-note-demo.JPG)
+> **Note**: Example of how to create a new note - Enter note title and text then click the save icon
+
+![View Saved Note Demo Image](/public/assets/images/view-saved-note-demo.JPG)
+> **Note**: Example of a saved note
 
 ## Contributing
 This project is not currently open for contributions.
@@ -46,9 +62,9 @@ Testing instructions for this project will be updated in a future update.
   
 ## Project Links
   
-Walkthrough Demo:
+Deployed Application: https://evening-sea-72708.herokuapp.com/ 
 
-Github Repository: https://github.com/that-devguy/Note-Taker-App
+Github Repository: https://github.com/that-devguy/Note-Taker-App
 
 ## License
 
