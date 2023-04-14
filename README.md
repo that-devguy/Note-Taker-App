@@ -62,7 +62,7 @@ Testing instructions for this project will be updated in a future update.
   
 ## Project Links
   
-Deployed Application: https://evening-sea-72708.herokuapp.com/ 
+Deployed Application: 
 
 Github Repository: https://github.com/that-devguy/Note-Taker-App
 
